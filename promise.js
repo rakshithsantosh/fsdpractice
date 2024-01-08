@@ -30,3 +30,11 @@ const fnasync = async () =>{
 }
 
 //await waits for the promise to get resolved we have to use await only if the function is async
+
+const promise = Promise.all([promise1,promise2,promise3])
+
+//we can use promise.all if we want to await on different promises to be reslved
+
+const promise = Promise.allSettled([promise1,promise2,promise3])
+
+//in this case the staus and the repsonse both are returned
