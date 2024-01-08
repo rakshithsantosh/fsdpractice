@@ -19,3 +19,14 @@ functionPromise.then((result)=>{console.log(result) /*or we can also return*/})
 functionPromise.catch((error)=>{console.log(error)})
 
 //when the promise is rejected then the .catch is invoked
+
+//if we call another promise in .then its nested promise we can also do nested catch operations
+
+//async await
+
+const fnasync = async () =>{
+    await functionPromise //someoperation
+
+}
+
+//await waits for the promise to get resolved we have to use await only if the function is async
